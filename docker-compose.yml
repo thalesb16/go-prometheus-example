@@ -1,0 +1,9 @@
+version: '3'
+
+services: 
+  api:
+    image: golang:1.18-alpine
+    build: .
+    command: go run main.go
+    ports: 
+      - 8000:8000
